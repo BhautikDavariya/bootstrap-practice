@@ -1,0 +1,253 @@
+html ...................>
+
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button class="btn float-end mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"><i
+            class="fas fa-times"></i></button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <ul class="mb-2 mb-lg-0 align-items-start list-unstyled mt-3">
+                    <li class="py-2 ps-4">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="py-2 ps-4">
+                        <a href="#sec3">About</a>
+                    </li>
+                    <li class="py-2 ps-4">
+                        <a href="#sec6">Service</a>
+                    </li>
+                    <li class="py-2 ps-4">
+                        <a href="#sec7">Department</a>
+                    </li>
+                    <li class="py-2 ps-4">
+                        <a href="#sec8">Doctors</a>
+                    </li>
+                    <li class="py-2 ps-4" onclick="hid1()">
+                        <a class="d-flex justify-content-between">
+                            Dropdown <i class="bi bi-chevron-down pe-4 text-dark"></i>
+                        </a>
+                    </li>
+                    <div class="mobile_drop1" id="mobile_drop1">
+                        <ul class="list-unstyled p-3 mt-3">
+                               <li class="py-1"><a href="#">Dropdown 1</a></li>
+                                <li class="py-1" onclick="hid2()"><a href="#">Deep Dropdown</a>
+                                </li>
+                                <div class="mobile_drop2" id="mobile_drop2">
+                                    <ul class="list-unstyled p-3 mt-3">
+                                        <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                                        <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                                        <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
+                                    </ul>
+                                </div>
+                                <li class="py-1"><a href="#">Dropdown 3</a></li>
+                                <li class="py-1"><a href="#">Dropdown 4</a></li>
+                                <li class="py-1"><a href="#">Dropdown 5</a></li>
+                        </ul>
+                    </div>
+                    <li class="py-2 ps-4">
+                        <a href="#sec8">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- model end -->
+
+<!-- header start -->
+    <section class="position-sticky top-0" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-row align-items-center">
+                    <a class="navbar-brand me-auto" href="#">
+                        <img class="img-fluid" src="images/logo.png" alt="logo" style="height: 40px; width: 150px;">
+                    </a>
+                    <nav class="navbar navbar-expand-lg navbar order-lg-1 order-2 d-flex">
+                        <div class="container-fluid p-0">
+                            <button class="navbar-toggler navtog">
+                                <span data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fas fa-bars"></i></span>
+                            </button>
+                            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                                <ul class="navbar-nav align-items-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec3">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec6">Service</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec8">Department</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec10">Doctors</a>
+                                    </li>
+                                    <li class="dropdown drop1">
+                                        <a class="btn" href="#">
+                                            Dropdown <i class="bi bi-chevron-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu drop1cont border-0 dpdown"
+                                            aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item ps-3" href="#">Dropdown 1</a></li>
+                                            <li class="dropdown drop2">
+                                                <a class="nav-link ps-3" href="#">Deep Dropdown <i
+                                                        class="bi bi-chevron-right"></i>
+                                                </a>
+                                                <ul class="dropdown-menu drop2cont border-0 dpdown"
+                                                    aria-labelledby="dropdownMenuLink">
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 1</a></li>
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 2</a></li>
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 3</a></li>
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 4</a></li>
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 5</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item ps-3" href="#">Dropdown 2</a></li>
+                                            <li><a class="dropdown-item ps-3" href="#">Dropdown 3</a></li>
+                                            <li><a class="dropdown-item ps-3" href="#">Dropdown 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec14">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <button class="head_btn ms-3 rounded-3 py-2 px-4 order-lg-2 order-1" type="submit">
+                        <a href="#sec7"><span><span class="d-md-inline d-none">Make an</span>
+                                Appointment</span></a></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- header end -->
+
+css......................>
+
+
+/* model start */
+.modal-dialog{
+    min-width: 95vw;
+    padding: 0 0px;
+}
+.modal-content {
+    border: none !important;
+    border-radius: 15px !important;
+    min-height: calc(100vh - 100px);
+} 
+.modal-content a{
+    color: black !important;
+    background-color:transparent !important;
+}
+.modal-content a:hover{
+    color:var(--primary_color) !important;
+}
+.modal-content a:focus{
+    color: var(--primary_color) !important;
+}
+.modal .fas{
+    font-size: 30px;
+    color: white !important;
+    font-weight: bold;
+}
+.mobile_drop1{
+    display: none;
+}
+#mobile_drop1{
+    /* max-width: 0vw; */
+    width: 80vw !important;
+    margin: 0 auto;
+    box-shadow: -10px -5px 40px 0 rgb(0 0 0 / 10%);
+}
+.mobile_drop2{
+    display: none;
+}
+#mobile_drop2{
+    box-shadow: -10px -5px 40px 0 rgb(0 0 0 / 10%);
+}
+
+/* model end */
+
+/* header start */
+#header{
+    z-index: 99;
+    background-color: var(--wht_color);
+    padding: 10px 0;
+}
+#header a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #626262 !important;
+    padding: 10px 7px;
+}
+#header a:hover{
+    color: var(--primary_color) !important;
+}
+#hover a:active{
+    color: var(--primary_color) !important;
+}
+#header .bi{
+    color: #626262 !important;
+}
+.drop1cont{
+    display: none;
+    width: auto;
+}
+.drop1:hover .drop1cont{
+  display: block;
+}
+.drop2cont{
+    display: none;
+    position: relative;
+}
+.drop2:hover .drop2cont{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+.dpdown{
+    width: 200px;
+    box-shadow: -10px -5px 40px 0 rgb(0 0 0 / 10%);
+}
+.navtog:focus{
+    box-shadow: none !important;
+}
+.head_btn a span{
+    color: var(--wht_color)!important;
+}
+.head_btn{
+    background: var(--primary_color);
+    border: 0;
+    padding: 10px 35px;
+    color: var(--wht_color);
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.head_btn:hover{
+    opacity: 0.9;
+}
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: none !important;
+}
+/* header end */
+
+js ...................>
+
+// for Mobile-nav ** Start **
+function hid1(){
+    let dp1 = document.getElementById("mobile_drop1");
+    dp1.classList.toggle("mobile_drop1");
+}
+function hid2(){
+    let dp2 = document.getElementById("mobile_drop2");
+    dp2.classList.toggle("mobile_drop2");
+}
+// for Mobile-nav ** End **

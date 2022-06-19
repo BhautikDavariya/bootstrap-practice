@@ -1,0 +1,126 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary_color:#3fbbc0;
+    --wht_color:white;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: "Open Sans", sans-serif;
+
+}
+/* h2{
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color:var(--primary_color);
+    width: 50px;
+    height: 3px;
+    left: calc(50% - 25px);
+} */
+.caro1{
+    background-image: url("../images/slide-1.jpeg");
+}
+
+
+.topbar{
+    background-color: var(--primary_color);
+}
+h2{
+
+}
+
+.sec1_icon .fas{
+    font-size: 50px;
+    color: var(--primary_color);
+}
+.sec1_card{
+    padding: 30px;
+    box-shadow: 0 0 15px gray;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+.sec1_card h4{
+    font-weight: 700;
+    margin: 15px 0;
+    font-size: 18px;
+}
+.sec1_card p{
+    font-size: 15px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.sec1_card:hover .fas{
+    color: var(--wht_color);
+}
+.sec1_card:hover p{
+    color: var(--wht_color);
+}
+.sec1_card:hover h4{
+    color: var(--wht_color);
+}
+.hovercard{
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary_color);
+    overflow: hidden;
+    width:100%;
+    height: 0;
+    transition: .5s ease;
+  }
+.sec1_card:hover .hovercard{
+    height: 100%;
+    z-index: -1;
+  }
+
+
+  .sec2{
+      background-color: var(--primary_color);
+      padding: 80px 0;
+  }
+  .sec2 h3{
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  .sec2 p{
+      font-size: 16px;
+      margin-bottom: 50px;
+  }
+  .sec2 a{
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      padding: 16px 25px;
+      background-color: var(--primary_color);
+      border-radius: 30px;
+      color: var(--wht_color) !important;
+      border: 2px solid var(--wht_color);
+      transition: all 0.5s;
+  }
+  a:hover{
+      border: 2px solid var(--primary_color);
+      background-color: var(--wht_color);
+      color: var(--primary_color) !important;
+  }
+

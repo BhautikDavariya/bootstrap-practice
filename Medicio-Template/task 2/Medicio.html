@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Fontawsome/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css_Js/Css/Medicio.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+    <!-- <div class="carousel-item active mainslider slid1">
+        <div class="container text-center" id="slidercontain">
+            <h2 class="fw-bolder">Welcome to Medicio</h2>
+            <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut
+                aliquam.
+                Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+                repellendus
+                deleniti vel.</p>
+            <button type="button" class="btn btn-get-started">Read More</button>
+        </div>
+    </div> -->
+
+    <title>Medicio</title>
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+
+    <!-- topbar  -->
+    <section>
+        <div class="container-fluid d-flex align-items-center topbar">
+            <div class="container-md">
+                <div class="dply d-flex justify-content-md-between">
+                    <div class="dnone">
+                        <i class="far fa-clock"></i> Monday - Saturday, 8AM to 10PM
+                    </div>
+                    <div>
+                        <i class="fas fa-mobile-alt"></i> Call us now +1 5589 55488 55
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- topbar -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button class="btn float-end mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"><i
+                class="fas fa-times"></i></button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <ul class="mb-2 mb-lg-0 align-items-start list-unstyled mt-3">
+                    <li class="py-2 ps-4">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="py-2 ps-4">
+                        <a href="#sec3">About</a>
+                    </li>
+                    <li class="py-2 ps-4">
+                        <a href="#sec6">Service</a>
+                    </li>
+                    <li class="py-2 ps-4">
+                        <a href="#sec7">Department</a>
+                    </li>
+                    <li class="py-2 ps-4">
+                        <a href="#sec8">Doctors</a>
+                    </li>
+                    <li class="py-2 ps-4" onclick="hid1()">
+                        <a class="d-flex justify-content-between">
+                            Dropdown <i class="bi bi-chevron-down pe-4 text-dark"></i>
+                        </a>
+                    </li>
+                    <div class="mobile_drop1" id="mobile_drop1">
+                        <ul class="list-unstyled p-3 mt-3">
+                            <li class="py-1"><a href="#">Dropdown 1</a></li>
+                            <li class="py-1" onclick="hid2()"><a href="#">Deep Dropdown</a>
+                            </li>
+                            <div class="mobile_drop2" id="mobile_drop2">
+                                <ul class="list-unstyled p-3 mt-3">
+                                    <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
+                                </ul>
+                            </div>
+                            <li class="py-1"><a href="#">Dropdown 3</a></li>
+                            <li class="py-1"><a href="#">Dropdown 4</a></li>
+                            <li class="py-1"><a href="#">Dropdown 5</a></li>
+                        </ul>
+                    </div>
+                    <li class="py-2 ps-4">
+                        <a href="#sec8">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- model end -->
+
+    <!-- header start -->
+    <section class="position-sticky top-0" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex flex-row align-items-center">
+                    <a class="navbar-brand me-auto logoImg" href="#">
+                        <img class="img-fluid" src="images/logo.png" alt="logo" style="height: 40px; width: 150px;">
+                    </a>
+                    <nav class="navbar navbar-expand-lg navbar order-lg-1 order-2 d-flex">
+                        <div class="container-fluid p-0">
+                            <button class="navbar-toggler navtog">
+                                <span data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                        class="fas fa-bars"></i></span>
+                            </button>
+                            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                                <ul class="navbar-nav align-items-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec3">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec6">Service</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec8">Department</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec10">Doctors</a>
+                                    </li>
+                                    <li class="dropdown drop1">
+                                        <a class="btn" href="#">
+                                            Dropdown <i class="bi bi-chevron-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu drop1cont border-0 dpdown"
+                                            aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item ps-3" href="#">Dropdown 1</a></li>
+                                            <li class="dropdown drop2">
+                                                <a class="nav-link ps-3" href="#">Deep Dropdown <i
+                                                        class="bi bi-chevron-right"></i>
+                                                </a>
+                                                <ul class="dropdown-menu drop2cont border-0 dpdown"
+                                                    aria-labelledby="dropdownMenuLink">
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 1</a></li>
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 2</a></li>
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 3</a></li>
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 4</a></li>
+                                                    <li><a class="dropdown-item ps-3" href="#">Dropdown 5</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="dropdown-item ps-3" href="#">Dropdown 2</a></li>
+                                            <li><a class="dropdown-item ps-3" href="#">Dropdown 3</a></li>
+                                            <li><a class="dropdown-item ps-3" href="#">Dropdown 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sec14">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <button class="head_btn ms-3 rounded-3 py-2 px-4 order-lg-2 order-1" type="submit">
+                        <span><span class="d-md-inline d-none">Make an</span>
+                            Appointment</span></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- header end -->
+
+
+    <!-- hero image start -->
+    <!-- slider scs -->
+    <div id="carouselExampleIndicators" class="carousel slide sliderscs" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                style="height: 12px; width: 12px; border-radius: 50%;" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+                style="height: 12px; width: 12px; border-radius: 50%;"></button>
+            <button type=" button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+                style="height: 12px; width: 12px; border-radius: 50%;"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active mainslider slid1">
+                <div class="container text-center" id="slidercontain">
+                    <h2 class="fw-bolder">Welcome to Medicio</h2>
+                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut
+                        aliquam.
+                        Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+                        repellendus
+                        deleniti vel.</p>
+                    <button type="button" class="btn btn-get-started sub_btnhov">Read More</button>
+                </div>
+            </div>
+            <div class="carousel-item mainslider slid2">
+                <div class="container text-center" id="slidercontain">
+                    <h2 class="fw-bolder">Lorem Ipsum Dolor</h2>
+                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut
+                        aliquam.
+                        Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+                        repellendus
+                        deleniti vel.</p>
+                    <button type="button" class="btn btn-get-started sub_btnhov">Read More</button>
+                </div>
+            </div>
+            <div class="carousel-item mainslider slid3">
+                <div class="container text-center" id="slidercontain">
+                    <h2 class="fw-bolder">Sequi ea ut et est quaerat</h2>
+                    <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut
+                        aliquam.
+                        Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+                        repellendus
+                        deleniti vel.</p>
+                    <button type="button" class="btn btn-get-started sub_btnhov">Read More</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev"
+            style="height: 54px; width: 54px; margin: 11.5rem 0.5rem; background: rgba(63, 187, 192, 0.8); border-radius: 50px;"
+            type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next"
+            style="height: 54px; width: 54px; margin: 11.5rem 0.5rem; background: rgba(63, 187, 192, 0.8); border-radius: 50px;"
+            type=" button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- slider scs end  -->
+    <!-- hero image end -->
+
+
+    <!-- section 3 -->
+    <section>
+        <div class="container aos-init aos-animate scs_3" data-aos="fade-up" style="margin: 5% auto 5% auto;">
+            <div class=" row scs_3 d-flex align-items-stretch g-4">
+                <div class="col-md-6 col-lg-3 aftr d-flex">
+                    <div class="scs_3_bgcolor">
+                        <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <h2><i class="fas fa-heartbeat"></i></h2>
+                            <h4><a href="">Lorem Ipsum</a></h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                        <div class="hovercard">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 aftr d-flex">
+                    <div class="scs_3_bgcolor">
+                        <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <h2><i class="fas fa-pills"></i></h2>
+                            <h4><a href="">Sed ut perspiciatis</a></h4>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        </div>
+                        <div class="hovercard">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 aftr d-flex">
+                    <div class="scs_3_bgcolor">
+                        <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <h2><i class="fas fa-thermometer"></i></h2>
+                            <h4><a href="">Magni Dolores</a></h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                        </div>
+                        <div class="hovercard">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 aftr d-flex">
+                    <div class="scs_3_bgcolor">
+                        <div class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <h2><i class="fas fa-dna"></i></h2>
+                            <h4><a href="">Nemo Enim</a></h4>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </div>
+                        <div class="hovercard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 3 end  -->
+
+    <!-- section 4 -->
+    <Section>
+        <div class="container-fluid bdcolor">
+            <div class="container-md py-5 text-center text-light" data-aos="zoom-in">
+                <div class="row">
+                    <div class="col">
+                        <h2>In an emergency? Need help now?</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate
+                            velit
+                            esse
+                            cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit
+                            anim id est laborum.</p>
+                        <button type="button" class="btn rounded-pill Makebtn">Make an Make an
+                            Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <!-- section 4 end  -->
+
+    <!-- section 5 -->
+    <section>
+        <div class="container-fluid">
+            <div class="container-md py-5">
+                <div class="row text-center about" data-aos="fade-up">
+                    <div class="col">
+                        <h2>ABOUT US</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas..</p>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <img class="w-100" src="images/about.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 about_scs pt-2" data-aos="fade-left">
+                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore
+                            magna aliqua.
+                        </p>
+                        <ul>
+                            <li><i class="far fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea
+                                commodo
+                                consequat.</li>
+                            <li><i class="far fa-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate
+                                velit.</li>
+                            <li><i class="far fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
+                                mastiro dolore eu fugiat nulla pariatur.</li>
+                        </ul>
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 5 end  -->
+
+    <!-- section 6 -->
+    <section>
+        <div class="container aos-init aos-animate" data-aos="fade-up" style="margin: 5% auto 5% auto;">
+            <div class=" row scs_3 d-flex align-items-stretch g-4">
+                <div class="col-md-6 col-lg-3 d-md-flex">
+                    <div class="aos-init aos-animate scs_6_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-user-md"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
+                            class="purecounter">85</span>
+                        <p><strong>Doctors</strong> consequuntur quae qui deca rode</p>
+                        <a href="#" class="">Find out more »</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-md-flex">
+                    <div class="aos-init aos-animate scs_6_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                        <i class="far fa-hospital"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="26" data-purecounter-duration="1"
+                            class="purecounter">26</span>
+                        <p><strong>Departments</strong> adipisci atque cum quia aut numquam delectus</p>
+                        <a href="#" class="">Find out more »</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-md-flex">
+                    <div class="aos-init aos-animate scs_6_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-flask"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1"
+                            class="purecounter">14</span>
+                        <p><strong>Research Lab</strong> aut commodi quaerat. Aliquam ratione</p>
+                        <a href="#" class="">Find out more »</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-md-flex">
+                    <div class="aos-init aos-animate scs_6_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-award"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                            class="purecounter">150</span>
+                        <p><strong>Awards</strong> rerum asperiores dolor molestiae doloribu</p>
+                        <a href="#" class="">Find out more »</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- section 6 end -->
+
+    <!-- section 7  -->
+    <section>
+        <div class="container-md aos-init aos-animate pb-5" data-aos="fade-up">
+            <div class="row scs_7">
+                <div class="col-lg-6 order-2 order-lg-1 aos-init aos-animate" data-aos="fade-right">
+                    <div class="icon-box mt-5 mt-lg-0">
+                        <i class="fas fa-receipt"></i>
+                        <h4>Est labore ad</h4>
+                        <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    </div>
+                    <div class="icon-box mt-5">
+                        <i class="fas fa-cubes"></i>
+                        <h4>Harum esse qui</h4>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    </div>
+                    <div class="icon-box mt-5">
+                        <i class="fas fa-images"></i>
+                        <h4>Aut occaecati</h4>
+                        <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    </div>
+                    <div class="icon-box mt-5">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Beatae veritatis</h4>
+                        <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                    </div>
+                </div>
+                <div class="image col-lg-6 order-1 order-lg-2 aos-init aos-animate" data-aos="zoom-in">
+                    <img src="images/features.jpg" alt="" class="w-100 h-100">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- section 7 end -->
+
+    <!-- section 8  -->
+    <section>
+        <div class="container-fluid">
+            <div class="container-md py-5">
+                <div class="row text-center about" data-aos="fade-up">
+                    <div class="col">
+                        <h2>SERVICES</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+                <div class=" row scs_3 pt-2 d-flex align-items-stretch g-4">
+                    <div class="col-md-6 col-lg-4 d-md-flex">
+                        <div class="aos-init aos-animate scs_8_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                            <div><i class="fas fa-heartbeat"></i></div>
+                            <h4><a href="">Lorem Ipsum</a></h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati cupiditate non provident</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-md-flex">
+                        <div class="aos-init aos-animate scs_8_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-pills"></i>
+                            <h4><a href="">Dolor Sitema</a></h4>
+                            <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat tarad limino ata</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-md-flex">
+                        <div class="aos-init aos-animate scs_8_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-thermometer"></i>
+                            <h4><a href="">Sed ut perspiciatis</a></h4>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-md-flex">
+                        <div class="aos-init aos-animate scs_8_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-dna"></i>
+                            <h4><a href="">Magni Dolores</a></h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                anim id est laborum</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-md-flex">
+                        <div class="aos-init aos-animate scs_8_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-wheelchair"></i>
+                            <h4><a href="">Nemo Enim</a></h4>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                voluptatum deleniti atque</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 d-md-flex">
+                        <div class="aos-init aos-animate scs_8_bgcolor" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-notes-medical"></i>
+                            <h4><a href="">Eiusmod Tempor</a></h4>
+                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                                nobis est eligendi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 8 end  -->
+
+
+    <!-- section 9 -->
+    <section>
+        <div class="container-fluid form_scs9">
+            <div class="container-md py-5">
+                <div class="row text-center about" data-aos="fade-up">
+                    <div class="col">
+                        <h2>MAKE AN APPOINTMENT</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+                <form action="" method="" class="aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="row">
+                        <div class="col-md-4 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                required="">
+                        </div>
+                        <div class="col-md-4 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required="">
+                        </div>
+                        <div class="col-md-4 form-group mt-3 mt-md-0">
+                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 form-group mt-3">
+                            <input type="datetime" name="date" class="form-control datepicker" id="date"
+                                placeholder="Appointment Date" required="">
+                        </div>
+                        <div class="col-md-4 form-group mt-3">
+                            <select name="department" id="department" class="form-select">
+                                <option value="">Select Department</option>
+                                <option value="Department 1">Department 1</option>
+                                <option value="Department 2">Department 2</option>
+                                <option value="Department 3">Department 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 form-group mt-3">
+                            <select name="doctor" id="doctor" class="form-select">
+                                <option value="">Select Doctor</option>
+                                <option value="Doctor 1">Doctor 1</option>
+                                <option value="Doctor 2">Doctor 2</option>
+                                <option value="Doctor 3">Doctor 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5"
+                            placeholder="Message (Optional)"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn rounded-pill Appointmentbtn sub_btnhov">Make an
+                            Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- section 9 end -->
+
+    <!-- section 10 -->
+    <section>
+        <div class="container-fluid">
+            <div class="container-md py-5">
+                <div class="row text-center about mb-2" data-aos="fade-up">
+                    <div class="col">
+                        <h2>DEPARTMENTS</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-start departments">
+                    <div class="nav flex-column tapsbtn nav-pills col-lg-4 mb-5 mb-lg-0" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                            <h4>Cardiology</h4>
+                            <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
+                        </a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="false">
+                            <h4>Neurology</h4>
+                            <p>Voluptas vel esse repudiandae quo excepturi.</p>
+                        </a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">
+                            <h4>Hepatology</h4>
+                            <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
+                        </a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            <h4>Pediatrics</h4>
+                            <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tab-content departmentsCon" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <h3>Cardiology</h3>
+                                <p class="fst-italic">Qui laudantium
+                                    consequatur laborum sit qui
+                                    ad sapiente dila parde
+                                    sonata raqer a videna mareta paulona marka</p>
+                                <img src="images/departments-1.jpg" alt="" class="img-fluid">
+                                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
+                                    ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima
+                                    eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique
+                                    accusamus nostrum rem vero</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                                <h3>Neurology</h3>
+                                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde
+                                    sonata raqer a videna mareta paulona marka</p>
+                                <img src="images/departments-2.jpg" alt="" class="img-fluid">
+                                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
+                                    ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima
+                                    eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique
+                                    accusamus nostrum rem vero</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <h3>Hepatology</h3>
+                                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde
+                                    sonata raqer a videna mareta paulona marka</p>
+                                <img src="images/departments-3.jpg" alt="" class="img-fluid">
+                                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
+                                    ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima
+                                    eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique
+                                    accusamus nostrum rem vero</p>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <h3>Pediatrics</h3>
+                                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde
+                                    sonata raqer a videna mareta paulona marka</p>
+                                <img src="images/departments-4.jpg" alt="" class="img-fluid">
+                                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos
+                                    ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima
+                                    eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique
+                                    accusamus nostrum rem vero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 10 end -->
+
+    <!-- section 11  -->
+    <section>
+        <div class="container-fluid">
+            <div class="container-md py-5">
+                <div class="row text-center about mb-2" data-aos="fade-up">
+                    <div class="col">
+                        <h2>TESTIMONIALS</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+
+                <!-- slider baki -->
+                <div class="row">
+                    <div class="col">
+                        <div id="two" class="owl-carousel owl-testimonial owl-theme ">
+                            <div class="item">
+                                <div class="testimonial-item">
+                                    <p class="fst-italic">
+                                        <i class="fas fa-quote-left"></i>
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
+                                        irure amet legam anim culpa.
+                                        <i class="fas fa-quote-right"></i>
+                                    </p>
+                                    <img src="images/testimonials-1.jpg" class="testimonial-img" alt="testimonial-img">
+                                    <h3>Soal Goodman</h3>
+                                    <h4>Ceo & Founder</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-item">
+                                    <p class="fst-italic">
+                                        <i class="fas fa-quote-left"></i>
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
+                                        irure amet legam anim culpa.
+                                        <i class="fas fa-quote-right"></i>
+                                    </p>
+                                    <img src="images/testimonials-2.jpg" class="testimonial-img" alt="testimonial-img">
+                                    <h3>Matt Brandon</h3>
+                                    <h4>Frelancer</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-item">
+                                    <p class="fst-italic">
+                                        <i class="fas fa-quote-left"></i>
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
+                                        irure amet legam anim culpa.
+                                        <i class="fas fa-quote-right"></i>
+                                    </p>
+                                    <img src="images/testimonials-3.jpg" class="testimonial-img" alt="testimonial-img">
+                                    <h3>Sara Wilsson</h3>
+                                    <h4>Designer</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-item">
+                                    <p class="fst-italic">
+                                        <i class="fas fa-quote-left"></i>
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
+                                        irure amet legam anim culpa.
+                                        <i class="fas fa-quote-right"></i>
+                                    </p>
+                                    <img src="images/testimonials-4.jpg" class="testimonial-img" alt="testimonial-img">
+                                    <h3>Jena Carlis</h3>
+                                    <h4>Store Owner</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-item">
+                                    <p class="fst-italic">
+                                        <i class="fas fa-quote-left"></i>
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
+                                        irure amet legam anim culpa.
+                                        <i class="fas fa-quote-right"></i>
+                                    </p>
+                                    <img src="images/testimonials-5.jpg" class="testimonial-img" alt="testimonial-img">
+                                    <h3>John Lanser</h3>
+                                    <h4>Designer</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- section 11 end -->
+
+
+    <!-- section 12 -->
+    <section>
+        <div class="container-fluid scs_12">
+            <div class="container-md py-5">
+                <div class="row text-center about mb-2" data-aos="fade-up">
+                    <div class="col">
+                        <h2>DOCTORS</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="DOCTORS overflow-hidden aos-init aos-animate " data-aos="fade-up"
+                            data-aos-delay="100">
+                            <div class="DOCTORS-img overflow-hidden">
+                                <img src="images/doctors-1.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="DOCTORS-info">
+                                <h4>Walter White</h4>
+                                <h5>Chief Medical Officer</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="DOCTORS overflow-hidden aos-init aos-animate" data-aos="fade-up"
+                            data-aos-delay="200">
+                            <div class="DOCTORS-img overflow-hidden">
+                                <img src="images/doctors-2.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="DOCTORS-info">
+                                <h4>Sarah Jhonson</h4>
+                                <h5>Anesthesiologist</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="DOCTORS overflow-hidden aos-init aos-animate" data-aos="fade-up"
+                            data-aos-delay="300">
+                            <div class="DOCTORS-img overflow-hidden">
+                                <img src="images/doctors-3.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="DOCTORS-info">
+                                <h4>William Anderson</h4>
+                                <h5>Cardiology</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                        <div class="DOCTORS overflow-hidden aos-init aos-animate" data-aos="fade-up"
+                            data-aos-delay="400">
+                            <div class="DOCTORS-img overflow-hidden">
+                                <img src="images/doctors-4.jpg" class="img-fluid" alt="">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="DOCTORS-info">
+                                <h4>Amanda Jepson</h4>
+                                <h5>Neurosurgeon</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 12 end  -->
+
+
+    <!-- section 13 -->
+    <section>
+        <div class="container-fluid">
+            <div class="container-md py-5">
+                <div class="row text-center about mb-2" data-aos="fade-up">
+                    <div class="col">
+                        <h2>GALLERY</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+                <!-- slider baki  -->
+                <div class="row sec13">
+                    <div id="one" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div><img src="images/gallery-1.jpg" alt=""></div>
+                        </div>
+                        <div class="item">
+                            <div><img src="images/gallery-2.jpg" alt=""></div>
+                        </div>
+                        <div class="item">
+                            <div><img src="images/gallery-3.jpg" alt=""></div>
+                        </div>
+                        <div class="item">
+                            <div><img src="images/gallery-4.jpg" alt=""></div>
+                        </div>
+                        <div class="item">
+                            <div><img src="images/gallery-5.jpg" alt=""></div>
+                        </div>
+                        <div class="item">
+                            <div><img src="images/gallery-6.jpg" alt=""></div>
+                        </div>
+                        <div class="item">
+                            <div><img src="images/gallery-7.jpg" alt=""></div>
+                        </div>
+                        <div class="item">
+                            <div><img src="images/gallery-8.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- baki  -->
+    <!-- section 13 end  -->
+
+
+    <!-- section 14 -->
+    <section>
+        <div class="container-fluid">
+            <div class="container-md py-5">
+                <div class="row text-center about mb-2" data-aos="fade-up">
+                    <div class="col">
+                        <h2>PRICING</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+
+                <div class="row pricingcard text-center">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                            <h3>Free</h3>
+                            <h4><sup>$</sup>0<span> / month</span></h4>
+                            <ul>
+                                <li>Aida dere</li>
+                                <li>Nec feugiat nisl</li>
+                                <li>Nulla at volutpat dola</li>
+                                <li class="Cancelword">Pharetra massa</li>
+                                <li class="Cancelword">Massa ultricies mi</li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy sub_btnhov">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+                        <div class="box featured aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Business</h3>
+                            <h4><sup>$</sup>19<span> / month</span></h4>
+                            <ul>
+                                <li>Aida dere</li>
+                                <li>Nec feugiat nisl</li>
+                                <li>Nulla at volutpat dola</li>
+                                <li>Pharetra massa</li>
+                                <li class="Cancelword">Massa ultricies mi</li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy sub_btnhov">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                        <div class="box aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                            <h3>Developer</h3>
+                            <h4><sup>$</sup>29<span> / month</span></h4>
+                            <ul>
+                                <li>Aida dere</li>
+                                <li>Nec feugiat nisl</li>
+                                <li>Nulla at volutpat dola</li>
+                                <li>Pharetra massa</li>
+                                <li>Massa ultricies mi</li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy sub_btnhov">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+                        <div class="box aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                            <span class="advanced">Advanced</span>
+                            <h3>Ultimate</h3>
+                            <h4><sup>$</sup>49<span> / month</span></h4>
+                            <ul>
+                                <li>Aida dere</li>
+                                <li>Nec feugiat nisl</li>
+                                <li>Nulla at volutpat dola</li>
+                                <li>Pharetra massa</li>
+                                <li>Massa ultricies mi</li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy sub_btnhov">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- section 14 end -->
+
+
+    <!-- section 15 -->
+    <section>
+        <div class="container-fluid scs_15" data-aos="fade-up">
+            <div class="container-md py-5">
+                <div class="row text-center about mb-2" data-aos="fade-up">
+                    <div class="col">
+                        <h2>FREQUENTLY ASKED QUESTIOINS</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <span class="mx-2">Non consectetur a erat nam at lectus urna duis?</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                                porttitor rhoncus dolor purus non.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                <span class="mx-2">Feugiat scelerisque varius morbi enim nunc faucibus a
+                                    pellentesque?</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                                morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                                ultrices eros in cursus turpis massa tincidunt dui.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                <span class="mx-2">Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                                    morbi?</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                                sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit
+                                amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
+                                convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFor">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFor" aria-expanded="false"
+                                aria-controls="flush-collapseFor">
+                                <span class="mx-2">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFor" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFor" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                                morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
+                                scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris
+                                ultrices eros in cursus turpis massa tincidunt dui.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                <span class="mx-2">Tempus quam pellentesque nec nam aliquam sem et tortor
+                                    consequat?</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Molestie a iaculis at erat pellentesque adipiscing commodo.
+                                Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.
+                                Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus
+                                in</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                <span class="mx-2">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis
+                                    nunc eget lorem dolor?</span>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris
+                                vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit
+                                amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu
+                                scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus
+                                faucibus. Nibh tellus molestie nunc non blandit massa enim nec.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 15 end  -->
+
+
+    <!-- section 16 -->
+    <section>
+        <div>
+            <div class="container-md py-5">
+                <div class="row text-center about mb-2" data-aos="fade-up">
+                    <div class="col">
+                        <h2>CONTACT</h2>
+                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <iframe style="border:0; width: 100%; height: 350px;"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.5700780366574!2d72.83163461430092!3d21.209231086970146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fe4b2fa62dd%3A0x24c1b705648bd6d3!2sOscar%20Career%20Point!5e0!3m2!1sen!2sin!4v1634489065547!5m2!1sen!2sin"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="container contact_scs">
+
+                <div class="row mt-5 g-5">
+
+                    <div class="col-lg-6">
+
+                        <div class="row contact">
+                            <div class="col-md-12">
+                                <div class="info-box">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    <h3>Our Address</h3>
+                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-box mt-4">
+                                    <i class="far fa-envelope"></i>
+                                    <h3>Email Us</h3>
+                                    <p>
+                                        info@example.com
+                                        <br>
+                                        contact@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-box mt-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <h3>Call Us</h3>
+                                    <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 contact">
+                        <form action="forms/contact.php" method="post" role="form" class="contact_form">
+                            <div class="row">
+                                <div class="col form-group mt-3">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name" required>
+                                </div>
+                                <div class="col form-group mt-3">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    placeholder="Subject" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                    required></textarea>
+                            </div>
+                            <div class="text-center mt-3 sendbtn sub_btnhov">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- section 16 end -->
+
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>Medicio</h3>
+                            <p>
+                                A108 Adam Street <br>
+                                NY 535022, USA<br><br>
+                                <strong>Phone:</strong> +1 5589 55488 55<br>
+                                <strong>Email:</strong> info@example.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="fab fa-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li>
+                                <i class="fas fa-chevron-right"></i> <a href="#">Home</a>
+                            </li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="fas fa-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" class="sub_btnhov" value="Subscribe">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                © Copyright <strong><span>Medicio</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medicio-free-bootstrap-theme/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- top button  -->
+    <section>
+        <a href="#" class="topbtn d-flex align-items-center justify-content-center active"><i
+                class="fas fa-arrow-up"></i></a>
+    </section>
+    <!-- top button end  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Css_js/JS/Medicio.js"></script>
+    <script src="Css_Js/Js/purecounter.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
